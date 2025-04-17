@@ -4,18 +4,11 @@ Hi there! 👋
 This is the my personal portfolio, I am a passionate Mechanical Engineering undergrad, poet, and aspiring prosthetics and robotics innovator from India 🇮🇳.  
 
 
-
----
-
 ## 🚀 Live Preview
 
 🔗 [Visit the Portfolio](url here)  
 _(If this isn't hosted yet, you can replace the above with "Coming soon!")_
 
----
-
-
----
 
 ## 📁 Folder Structure
 
@@ -33,7 +26,9 @@ _(If this isn't hosted yet, you can replace the above with "Coming soon!")_
 ├── package.json            # Project metadata and scripts
 └── vite.config.ts          # Vite configuration
 
+```
+
 Surya
-🔬 Mechanical Engineering Undergrad | ✍️ Poet | 🦿 Prosthetics Innovator
-📫 Email: surya.svns@gmail.com
+🔬 Mechanical Engineering Undergrad | ✍️ Poet | 🦿 Prosthetics & Robotics Innovator
+📫 Email: svns.surya@gmail.com
 📚 Blog & Portfolio: Coming soon...
