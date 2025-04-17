@@ -26,7 +26,7 @@ const Navigation: React.FC<NavProps> = ({ isDarkMode, toggleDarkMode }) => {
             to="/"
             className="text-2xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
           >
-            JD
+            Surya Sunkara
           </NavLink>
 
           <div className="hidden md:flex items-center space-x-4">
