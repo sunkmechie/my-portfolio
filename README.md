@@ -7,7 +7,7 @@ This is the my personal portfolio, I am a passionate Mechanical Engineering unde
 ## 🚀 Live Preview
 
 🔗 [Visit the Portfolio](url here)  
-_(If this isn't hosted yet, you can replace the above with "Coming soon!")_
+Coming soon!
 
 
 ## 📁 Folder Structure
