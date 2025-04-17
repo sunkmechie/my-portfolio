@@ -1,0 +1,12 @@
+# Ignore the Bolt folder
+.bolt/
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+.vite/
+
+# Env files
+*.env
