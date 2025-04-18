@@ -13,16 +13,24 @@ const App: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true) // Default to dark
   const poemIndex = useRef(0)
 
-  // Combined Poems array: first 4 for light mode (hope, love, strength), last 4 for dark mode (pain, despair)
+  // Alternating Poems: dark, light, dark, light...
   const Poems = [
-    "Hope is the thing with feathers — that perches in the soul…",
-    "Love is not all: it is but an essence…",
-    "You may shoot me with your words, cut me with your eyes…",
-    "The world breaks everyone, and afterward, many are strong…",
-    "Every man has his secret sorrows which the world knows not…",
-    "I have loved flowers that fade…",
-    "Deep into that darkness peering, long I stood there wondering…",
-    "I have measured out my life with coffee spoons…",
+    // Dark 1: Pain - Emily Dickinson
+    "\"I wonder if it hurts to live—\nAnd if They have to try—\nAnd whether—could They choose between—\nIt would not be—to die—\"\n— Emily Dickinson",
+    // Light 1: Hope - Rainer Maria Rilke
+    "\"Let everything happen to you: beauty and terror.\nJust keep going. No feeling is final.\"\n— Rainer Maria Rilke",
+    // Dark 2: Despair - W.H. Auden
+    "\"He was my North, my South, my East and West,\nMy working week and my Sunday rest...\"\n— W.H. Auden",
+    // Light 2: Healing - Mary Oliver
+    "\"You do not have to be good.\nYou only have to let the soft animal of your body\nlove what it loves.\"\n— Mary Oliver",
+    // Dark 3: Unrequited Love - Pablo Neruda
+    "\"Love is so short, forgetting is so long.\"\n— Pablo Neruda",
+    // Light 3: Love - E.E. Cummings
+    "\"i carry your heart(i carry it in my heart)\"\n— E.E. Cummings",
+    // Dark 4: Emotional Numbness - Sylvia Plath
+    "\"I am learning peacefulness, lying by myself quietly\nAs the light lies on these white walls, this bed, these hands.\"\n— Sylvia Plath",
+    // Light 4: Self-love & Recovery - Derek Walcott
+    "\"You will love again the stranger who was your self.\nGive wine. Give bread. Give back your heart...\"\n— Derek Walcott"
   ]
 
   // Ensure dark mode class on initial load
@@ -43,7 +51,6 @@ const App: React.FC = () => {
   }, [isDarkMode])
 
   const toggleDarkMode = () => {
-    // Curtain swipe overlay
     const overlay = document.createElement('div')
     overlay.classList.add('theme-transition')
     overlay.style.backgroundColor = isDarkMode ? '#fff' : '#111'
@@ -57,8 +64,7 @@ const App: React.FC = () => {
     document.body.appendChild(overlay)
 
     // Select the next poem
-    const subset = isDarkMode ? Poems.slice(0, 4) : Poems.slice(4)
-    const line = subset[poemIndex.current % subset.length]
+    const line = Poems[poemIndex.current % Poems.length]
     poemIndex.current += 1
 
     const poemEl = document.createElement('div')
@@ -73,25 +79,22 @@ const App: React.FC = () => {
     poemEl.style.lineHeight = '1.5'
     poemEl.style.textAlign = 'center'
     poemEl.style.maxWidth = '80%'
+    poemEl.style.whiteSpace = 'pre-line'
     poemEl.style.wordWrap = 'break-word'
     poemEl.style.zIndex = '9998'
     document.body.appendChild(poemEl)
 
-    // Wait briefly for overlay to be visible before changing theme and showing poem
+    // Change theme and fade overlay in sync
     setTimeout(() => {
       setIsDarkMode(prev => !prev)
-    }, 100) // Change theme early
-
-    // Fade out overlay after a delay
-    setTimeout(() => {
       overlay.style.opacity = '0'
-    }, 2000)
+    }, 1000)
 
     // Remove elements after transition
     setTimeout(() => {
       if (overlay.parentNode) document.body.removeChild(overlay)
       if (poemEl.parentNode) document.body.removeChild(poemEl)
-    }, 3000)
+    }, 2500)
   }
 
   return (
