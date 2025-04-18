@@ -14,11 +14,9 @@ const Contact = () => {
             📧 Email: <a href="mailto:svns.surya@gmail.com" className="text-blue-600 hover:underline">svns.surya@gmail.com</a>
           </p>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            🐙 GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">github.com/your-username</a>
+            🐙 GitHub: <a href="https://github.com/sunkmechie" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">github.com/your-username</a>
           </p>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            🌐 Portfolio (GitHub Pages): <a href="https://your-username.github.io/your-repo/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">your-username.github.io/your-repo</a>
-          </p>
+         
         </div>
       </div>
     </div>
