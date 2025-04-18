@@ -15,22 +15,26 @@ const Poetry = () => {
 
   return (
     <div className="min-h-screen relative flex items-center justify-center px-6 py-24 bg-gradient-to-b from-[#1e1b2e] via-[#362c41] to-[#1e1b2e] text-center text-white font-serif overflow-hidden">
-      {/* Floating Petals Animation */}
+      {/* Floating Flowers Animation */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-        {[...Array(10)].map((_, i) => (
-          <div
+        {[...Array(8)].map((_, i) => (
+          <img
             key={i}
-            className="absolute w-6 h-6 bg-rose-300 opacity-30 rounded-full animate-float"
+            src="/flower.svg"
+            alt="floating flower"
+            className="absolute w-10 h-10 animate-float"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animationDuration: `${6 + Math.random() * 5}s`,
-              animationDelay: `${Math.random() * 3}s`
+              animationDuration: `${6 + Math.random() * 4}s`,
+              animationDelay: `${Math.random() * 3}s`,
+              opacity: 0.4 + Math.random() * 0.3
             }}
-          ></div>
+          />
         ))}
       </div>
 
+      {/* Main Content */}
       <div className="relative z-10 max-w-3xl bg-white/5 backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-white/10">
         <h1 className="text-5xl md:text-6xl font-bold text-rose-100 mb-10 tracking-wide drop-shadow-lg">
           Poetry Corner
