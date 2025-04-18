@@ -21,7 +21,7 @@ const Home = () => {
                 1000,
                 'Probably overthinking a hinge mechanism right now',
                 1000,
-                'Sketching half-baked ideas on the tissue paper',
+                'Sketching half-baked ideas on the napkin',
                 1000,
                 'The main character engineer you wish you met earlier',
                 1000,
@@ -34,7 +34,7 @@ const Home = () => {
               repeat={Infinity}
             />
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-I am 50% engineer and 50% day dreamer. You can find me building some really crazy stuff when am locked in, the list doesn't end with drones or prosthesis. Outside the lab, you'll find me scribbling poems onto my palm! (We all know that the funds don't allow for scribbling my poems onto the paper😅)
+I’m 60 parts engineer, the rest a full-time daydreamer. When I’m locked in, I build wild things—from drones to devices I can't even name yet. But when the lab lights go out? That’s when you find me scribbling poems onto my palm! (Yeah, paper’s too premium these days and the funds don't include budget for poetry paper😅)
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
