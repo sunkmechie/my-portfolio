@@ -34,7 +34,7 @@ const Home = () => {
               repeat={Infinity}
             />
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-I’m 60 parts engineer, the rest a full-time daydreamer. When I’m locked in, I build wild things—from drones to devices I can't even name yet. But when the lab lights go out? That’s when you find me scribbling poems onto my palm! (Yeah, paper’s too premium these days and the funds don't include budget for poetry paper😅)
+I’m 60 parts engineer, the rest a full-time daydreamer. When I’m locked in, I build wild things—from drones to devices I can't even name yet. But when the lab lights go out? That’s when you'll find me scribbling poems onto my palm! (Yeah, paper’s a bit too premium these days and my budget doesn't cover for poetry-grade paper😅)
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
