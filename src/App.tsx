@@ -94,7 +94,7 @@ const App: React.FC = () => {
     setTimeout(() => {
       if (overlay.parentNode) document.body.removeChild(overlay)
       if (poemEl.parentNode) document.body.removeChild(poemEl)
-    }, 2500)
+    }, 6000)
   }
 
   return (
