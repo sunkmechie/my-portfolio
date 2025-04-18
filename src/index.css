@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Global smooth color & filter transitions */
+html,
+body {
+  transition: background-color 0.6s ease, color 0.6s ease, filter 0.6s ease;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Cinematic Theme Curtain with Blur & Fade */
+.theme-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: var(--theme-bg, #111);
+  backdrop-filter: blur(4px) brightness(1.3);
+  animation: curtainSwipe 0.7s ease-in-out forwards, fadeOverlay 0.7s ease-in-out forwards;
+  pointer-events: none;
+}
+
+@keyframes curtainSwipe {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fadeOverlay {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Poetic Fade-In/Out */
+.poem-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  animation: poemFade 6s ease-in-out forwards; /* Extended duration */
+}
+
+@keyframes poemFade {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
