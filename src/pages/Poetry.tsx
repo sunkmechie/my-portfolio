@@ -2,13 +2,15 @@ import React from 'react';
 
 const Poetry = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
-      <div className="max-w-2xl text-center">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">Poetry Corner</h1>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-24 bg-gradient-to-br from-[#2b2e4a] via-[#f2e9e4] to-[#22223b] text-center text-white">
+      <div className="max-w-3xl bg-white/10 backdrop-blur-md p-10 rounded-3xl shadow-xl border border-white/20">
+        <h1 className="text-5xl font-serif font-bold text-pink-100 mb-8 tracking-wide drop-shadow-xl">
+          Poetry Corner
+        </h1>
+        <p className="text-lg md:text-xl text-purple-200 leading-relaxed mb-4 font-light italic">
           Sometimes, when equations rest, verses rise. This is my sanctuary for romantic poetry and lyrical reflections—a balance between gears and grace.
         </p>
-        <p className="text-gray-600 dark:text-gray-400 mt-4">📝 I'll soon upload some of my published poems here.</p>
+        <p className="text-sm text-purple-300 mt-6">📝 I'll soon upload some of my published poems here.</p>
       </div>
     </div>
   );
