@@ -17,11 +17,15 @@ const Home = () => {
           >
             <TypeAnimation
               sequence={[
-                'Engineering Dreams',
+                'Building cool stuff. Period.',
                 1000,
-                'Designing the Future',
+                'Probably overthinking a hinge mechanism right now',
                 1000,
-                'Creating Impact',
+                'Sketching half-baked ideas on the tissue paper',
+                1000,
+                'The main character engineer you wish you met earlier',
+                1000,
+                'Occasionally bleeds poetry onto the nearest piece of paper',
                 1000,
               ]}
               wrapper="h1"
@@ -30,9 +34,7 @@ const Home = () => {
               repeat={Infinity}
             />
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Mechanical Engineering student passionate about creating innovative
-              prosthetic solutions that enhance lives through the perfect blend of
-              engineering and human-centered design.
+I am 50% engineer and 50% day dreamer. You can find me building some really crazy stuff when am locked in, the list doesn't end with drones or prosthesis. Outside the lab, you'll find me scribbling poems onto my palm! (We all know that the funds don't allow for scribbling my poems onto the paper😅)
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
